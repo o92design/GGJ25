@@ -7,7 +7,7 @@
    - **Description:** Brainstorm ideas for Global Game Jam 25, including game mechanics, story ideas, and art concepts related to the theme.
 
 **[Project Setup #2](https://github.com/o92design/GGJ25/issues/2)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Create a new Unity 2D project, set up folder structure, and configure Unity Input System for Xbox 360 controller support.
 
 **[Character Movement #3](https://github.com/o92design/GGJ25/issues/3)**
