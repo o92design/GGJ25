@@ -4,6 +4,34 @@ A project for the Global Game Jam 25
 # The boy and bear
 The game is inspired by a heartfelt poem about a boy and his teddybear, symbolizing companionship and overcoming loneliness. The gameplay brings this bond to life through cooperative mechanics where the boy and bear must rely on each other to survive an adventurous journey. Set in a melancholic but hopeful world of rain and danger, the player controls both characters, working in tandem to explore, fight enemies, and protect each other.
 
+## The boy and the bear
+
+This is the story of a boy and how he changed.<br> 
+A boy lonely, but content. <br>
+Eventhough others saw him estranged. <br>
+And so his days alone was spent. <br>
+
+A mothers concern so big through love, <br>
+Oh, what will the maker think from above! <br>
+But through his days of lone explore <br>
+Bubbles would always ignore, the loneliness at its core <br>
+Never sad, never bore <br>
+But the day would come ashore <br>
+When alone and strange would be no more.<br>
+
+You see bubbles would one day found<br>
+Out on an adventure to the pouring rains sound<br>
+what is that he sees on the ground?<br>
+a teddy so torn and crud<br>
+just laying there poorly in the mud<br>
+Heavy it was,<br>
+Weighing way more than a pound!<br>
+The boy tried and tried<br>
+to save the teddy from being drowned<br>
+bigger and bigger, raindrops had become<br>
+quicker and quicker, bubbles began to dig <br>
+So quick his hands they both got numb<br>
+
 # Requirements
 ## Must-Have
 * Boy and bear movement controlled independently using an Xbox 360 controller:
