@@ -15,7 +15,7 @@
    - **Description:** Implement `CharacterController2D` script for boy and bear movement using Rigidbody2D and physics-based movement.
 
 **[Combat and defense - CombatController #4](https://github.com/o92design/GGJ25/issues/4)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Implement a `CombatController` script for the boy’s sword attack with animation triggers.
 
 **[Combat And Defense - DefenseController #5](https://github.com/o92design/GGJ25/issues/5)**
