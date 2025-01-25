@@ -39,7 +39,7 @@
    - **Description:** Implement and test the single enemy type with a basic health and damage system for enemies, including states: `Idle`, `Chase`, `Attack`.
 
 **[Camera and environment - #10](https://github.com/o92design/GGJ25/issues/10)**
-    - **Status:** In Progress
+    - **Status:** Closed (completed)
     - **Fix:** Sprite rendering order based on y axis.
     - **Description:** Use Unity Cinemachine to implement a dynamic camera that follows both characters, with smooth damping for camera transitions and a tilted top-down perspective for gameplay clarity.
 
