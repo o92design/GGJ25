@@ -11,7 +11,7 @@
    - **Description:** Create a new Unity 2D project, set up folder structure, and configure Unity Input System for Xbox 360 controller support.
 
 **[Character Movement #3](https://github.com/o92design/GGJ25/issues/3)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Implement `CharacterController2D` script for boy and bear movement using Rigidbody2D and physics-based movement.
 
 **[Combat and defense - CombatController #4](https://github.com/o92design/GGJ25/issues/4)**
