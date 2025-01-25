@@ -7,6 +7,7 @@ public class CharacterController2D : MonoBehaviour
     public float springDistance = 1f;
     public float springDampingRatio = 0.5f;
     public float springFrequency = 1f;
+    public CombatController combatController;
 
     private Transform boyTransform;
     private Transform bearTransform;
@@ -74,10 +75,22 @@ public class CharacterController2D : MonoBehaviour
         springJoint.distance = springDistance;
         springJoint.dampingRatio = springDampingRatio;
         springJoint.frequency = springFrequency;
+
+        // Update the combat controller with the current move direction
+        if (combatController != null)
+        {
+            combatController.SetMoveDirection(boyMovement);
+        }
     }
 
     void FixedUpdate()
     {
+        // Prevent boy movement if the character is attacking
+        if (combatController != null && combatController.IsAttacking)
+        {
+            boyMovement = Vector2.zero;
+        }
+
         // Move the boy
         boyRb.MovePosition(boyRb.position + boyMovement * moveSpeed * Time.fixedDeltaTime);
 
