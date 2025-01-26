@@ -35,7 +35,7 @@
    - **Description:** Create an `EnemyController` script implementing a finite state machine (FSM) with states: `Idle`, `Chase`, `Attack`.
 
 **[Enemy System - Health and damage #9](https://github.com/o92design/GGJ25/issues/9)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Implement and test the single enemy type with a basic health and damage system for enemies, including states: `Idle`, `Chase`, `Attack`.
 
 **[Camera and environment - #10](https://github.com/o92design/GGJ25/issues/10)**
