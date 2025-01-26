@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
     public float springDampingRatio = 0.5f;
     public float springFrequency = 1f;
     public CombatController combatController;
+    public DefenseController defenseController;
 
     private Transform boyTransform;
     private Transform bearTransform;
@@ -89,6 +90,12 @@ public class CharacterController2D : MonoBehaviour
         if (combatController != null && combatController.IsAttacking)
         {
             boyMovement = Vector2.zero;
+        }
+
+        // Prevent bear movement if the character is defending
+        if (defenseController != null && defenseController.IsDefending)
+        {
+            bearMovement = Vector2.zero;
         }
 
         // Move the boy
