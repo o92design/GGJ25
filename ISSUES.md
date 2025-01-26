@@ -52,7 +52,7 @@
    - **Description:** Solidify the visual aesthetic with interactive mud and puddles with friction adjustments.
 
 **[Narrative and Transitions - StorybookManager #13](https://github.com/o92design/GGJ25/issues/13)**
-   - **Status:** In Progress
+   - **Status:** Closed (completed)
    - **Description:** Implement a `StorybookManager` script to handle displaying lines of the poem as UI elements and animating text appearance and fade-in/out transitions.
 
 **[Narrative and Transitions - StorybookManager - Add voice-over #14](https://github.com/o92design/GGJ25/issues/14)**
