@@ -2,28 +2,31 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public AttackController attackController;
     public float chaseRange = 5f;
     public float attackRange = 1f;
     public float moveSpeed = 2f;
-    public int damage = 10;
-    public float attackCooldown = 2f; // Cooldown duration in seconds
 
-    public Transform target;
+    private Transform target;
     private Rigidbody2D rb;
-    private Animator animator;
-    private bool canAttack = true;
+    private Health health;
 
-    public enum State { Idle, Chase, Attack }
-    public State currentState = State.Idle;
+    private enum State { Idle, Chase, Attack }
+    private State currentState = State.Idle;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        health = GetComponent<Health>();
     }
 
     void Update()
     {
+        if (health.currentHealth <= 0)
+        {
+            return; // Stop updating if the enemy is dead
+        }
+
         switch (currentState)
         {
             case State.Idle:
@@ -58,7 +61,7 @@ public class EnemyController : MonoBehaviour
         {
             currentState = State.Attack;
         }
-        else if (canAttack) // Ensure the enemy only moves if it is not attacking
+        else
         {
             Vector2 direction = (target.position - transform.position).normalized;
             rb.MovePosition(rb.position + direction * moveSpeed * Time.deltaTime);
@@ -71,12 +74,11 @@ public class EnemyController : MonoBehaviour
         {
             currentState = State.Chase;
         }
-        else if (canAttack)
+        else
         {
-            // Trigger attack animation
-            animator.SetTrigger("Attack");
-            canAttack = false;
-            Invoke(nameof(ResetAttack), attackCooldown);
+            Vector2 attackDirection = (target.position - transform.position).normalized;
+            attackController.SetAttackDirection(attackDirection);
+            attackController.TriggerAttack();
         }
     }
 
@@ -97,20 +99,5 @@ public class EnemyController : MonoBehaviour
         }
 
         return closestTarget;
-    }
-
-    void ResetAttack()
-    {
-        canAttack = true;
-    }
-
-    // This method can be called by the attack animation event
-    public void DealDamage()
-    {
-        if (target != null && Vector2.Distance(transform.position, target.position) <= attackRange)
-        {
-            // Assuming the target has a method to take damage
-            //target.GetComponent<PlayerHealth>().TakeDamage(damage);
-        }
     }
 }
