@@ -44,7 +44,7 @@
     - **Description:** Use Unity Cinemachine to implement a dynamic camera that follows both characters, with smooth damping for camera transitions and a tilted top-down perspective for gameplay clarity.
 
 **[Camera and Environment - Particle systems for rain #11](https://github.com/o92design/GGJ25/issues/11)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Add environmental effects such as particle systems for rain.
 
 **[Camera and Environment - Interactive mud and puddles with friction adjustments #12](https://github.com/o92design/GGJ25/issues/12)**
