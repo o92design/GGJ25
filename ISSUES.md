@@ -31,7 +31,7 @@
    - **Description:** Import hand-drawn assets into Unity, use Shader Graph to create a custom ink-style shader, and set up a test scene with placeholders for forest backgrounds and rain effects.
 
 **[Enemy System - Enemy States #8](https://github.com/o92design/GGJ25/issues/8)**
-   - **Status:** In Progress
+   - **Status:** Closed (completed)
    - **Description:** Create an `EnemyController` script implementing a finite state machine (FSM) with states: `Idle`, `Chase`, `Attack`.
 
 **[Enemy System - Health and damage #9](https://github.com/o92design/GGJ25/issues/9)**
