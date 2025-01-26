@@ -43,5 +43,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Grass
+    uniqueID: 952095181
+    locked: 0
+  - name: Trees
+    uniqueID: 44551615
+    locked: 0
+  - name: PlayerAndEnemies
+    uniqueID: 1467324799
+    locked: 0
   m_RenderingLayers:
   - Default
