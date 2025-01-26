@@ -19,7 +19,7 @@
    - **Description:** Implement a `CombatController` script for the boy’s sword attack with animation triggers.
 
 **[Combat And Defense - DefenseController #5](https://github.com/o92design/GGJ25/issues/5)**
-   - **Status:** Open
+   - **Status:** Closed (completed)
    - **Description:** Implement a `DefenseController` script for the bear’s shield, detecting collisions with enemies or projectiles.
 
 **[Controller Remapping #6](https://github.com/o92design/GGJ25/issues/6)**
