@@ -1469,6 +1469,8 @@ GameObject:
   - component: {fileID: 274945661}
   - component: {fileID: 274945660}
   - component: {fileID: 274945662}
+  - component: {fileID: 274945663}
+  - component: {fileID: 274945664}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1619,13 +1621,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d85441bd4745bf44a14c43663c861b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackController: {fileID: 274945663}
   chaseRange: 5
   attackRange: 1
   moveSpeed: 4
-  damage: 10
-  attackCooldown: 2
-  target: {fileID: 0}
-  currentState: 0
+--- !u!114 &274945663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274945656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1802363e235db2a47b7a86c191168f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 274945660}
+  attackCooldown: 1
+  attackRange: 1
+  attackDamage: 10
+  attackBoxSize: {x: 1, y: 1}
+  lineRenderer: {fileID: 0}
+  attackTrigger: Attack
+--- !u!114 &274945664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274945656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb04010f7a0dd774caa05e11c5db44a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 10
+  defenseController: {fileID: 0}
 --- !u!1 &325972616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2073,8 @@ GameObject:
   - component: {fileID: 390194233}
   - component: {fileID: 390194235}
   - component: {fileID: 390194236}
+  - component: {fileID: 390194237}
+  - component: {fileID: 390194238}
   m_Layer: 0
   m_Name: Boy
   m_TagString: Player
@@ -2180,10 +2215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2827742969d754c499399472f27502d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 390194233}
-  attackCooldown: 2
-  lineRenderer: {fileID: 390194235}
-  attackRange: 1
+  attackController: {fileID: 390194237}
 --- !u!120 &390194235
 LineRenderer:
   serializedVersion: 2
@@ -2303,6 +2335,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1b01041acaf9408dc06f93a558937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &390194237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390194229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1802363e235db2a47b7a86c191168f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 390194233}
+  attackCooldown: 1
+  attackRange: 1
+  attackDamage: 10
+  attackBoxSize: {x: 1, y: 1}
+  lineRenderer: {fileID: 0}
+  attackTrigger: Attack
+--- !u!114 &390194238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390194229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb04010f7a0dd774caa05e11c5db44a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  defenseController: {fileID: 1559763000}
 --- !u!1 &397616390
 GameObject:
   m_ObjectHideFlags: 0
@@ -8792,8 +8858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c12db230f44a3d48abcf1498f246df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  shield: {fileID: 0}
+  animator: {fileID: 1559762999}
+  shield: {fileID: 1895857776}
   shieldDuration: 2
   shieldCooldown: 5
 --- !u!1 &1562915200

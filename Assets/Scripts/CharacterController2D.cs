@@ -87,7 +87,7 @@ public class CharacterController2D : MonoBehaviour
     void FixedUpdate()
     {
         // Prevent boy movement if the character is attacking
-        if (combatController != null && combatController.IsAttacking)
+        if (combatController != null && combatController.attackController.IsAttacking)
         {
             boyMovement = Vector2.zero;
         }
